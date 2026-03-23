@@ -1,0 +1,4 @@
+{
+	"name": "wa",
+	"serverCode": "// Put your code here.\necho \"<p>\n  <a class='wa-link' href='https://wa.me/6285260589003' target='_blank' rel='noopener'>\n    <img src='https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg' alt='WhatsApp' style='width: 20px; height: 20px; vertical-align: middle;' />\n    info lebih lanjut Chat via WhatsApp\n  </a>\n</p>\n\";"
+}

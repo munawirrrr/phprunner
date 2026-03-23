@@ -1,0 +1,4 @@
+{
+	"name": "tell_about",
+	"serverCode": "// Put your code here.\necho \"<a class='btn btn-default tellabout' href='\".GetTableLink(\"newsreplyfriend\",\"add\").\"' target='_blank'>Tell a friend about this news</a>\";"
+}

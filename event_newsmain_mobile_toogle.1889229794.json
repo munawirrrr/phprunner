@@ -1,0 +1,4 @@
+{
+	"name": "newsmain_mobile_toogle",
+	"serverCode": "// Put your code here.\necho '<button data-pageid=\"1\" type=\"button\" class=\"navbar-toggle collapsed\" data-runner-toggle=\"collapse\" data-target=\"[data-mobile-controlled]\">\t\n\t\t\t\t\t<span class=\"sr-only\">Toggle navigation</span>\t\n\t\t\t\t\t<span class=\"icon-bar\"></span>\t\t\t\t\t\n\t\t\t\t</button>';"
+}

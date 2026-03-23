@@ -1,0 +1,1854 @@
+{
+	"orderInfo": [
+		{
+			"index": 3,
+			"asc": false,
+			"field": "Posted"
+		}
+	],
+	"sql": "select\nid,\nTitle,\nPosted,\nCategory,\nSubcategory,\nSmallDescription,\nFullDescription,\nnews_image\nFROM newsmain\nWHERE (kirim ='1')\nORDER BY Posted DESC",
+	"connId": "Tables",
+	"originalTable": "newsmain",
+	"name": "newsmain",
+	"shortTableName": "newsmain",
+	"hideFilterUntilSearch": true,
+	"caseSensitiveSearch": "",
+	"highlightSearchResults": false,
+	"tableOwnerIdField": "id",
+	"usersOwnerIdField": "ID",
+	"pageSizeRecords": 100,
+	"pageSizeSelectorRecords": [
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"500",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"chartSettings": {
+		"typeNumber": 0,
+		"chartRefreshTime": 300,
+		"accumulationAppearance": 1
+	},
+	"keyFields": [
+		"id"
+	],
+	"fields": [
+		{
+			"name": "id",
+			"sqlExpression": "id",
+			"strField": "id",
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list",
+				"filterTotals": 1
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"Indonesian": "id"
+			},
+			"tooltip": {
+				"Indonesian": ""
+			},
+			"placeholder": {
+				"Indonesian": ""
+			},
+			"tableName": "newsmain"
+		},
+		{
+			"name": "Title",
+			"sqlExpression": "Title",
+			"strField": "Title",
+			"type": 200,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				},
+				{
+					"format": "Custom",
+					"pageType": "list",
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "$value = \"<A href='newsmain_view.php?editid1=\".$data[\"id\"].\"'>\".$value.\"</a>\";",
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				},
+				{
+					"format": "Custom",
+					"pageType": "print",
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "$value = \"<A href='newsmain_view.php?editid1=\".$data[\"id\"].\"'>\".$value.\"</a>\";",
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				},
+				{
+					"format": "Custom",
+					"pageType": "export",
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "$value = \"<A href='newsmain_view.php?editid1=\".$data[\"id\"].\"'>\".$value.\"</a>\";",
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textboxMaxLenth": 250,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"timeConvention": 1
+				},
+				{
+					"pageType": "add",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textboxMaxLenth": 250,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"timeConvention": 1
+				},
+				{
+					"pageType": "search",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textboxMaxLenth": 250,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list",
+				"filterTotals": 1
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"Indonesian": "Title"
+			},
+			"tooltip": {
+				"Indonesian": ""
+			},
+			"placeholder": {
+				"Indonesian": ""
+			},
+			"tableName": "newsmain"
+		},
+		{
+			"name": "Posted",
+			"sqlExpression": "Posted",
+			"strField": "Posted",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Long Date",
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"required": true,
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"dateEditType": 13,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list",
+				"filterTotals": 1
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"Indonesian": "Posted"
+			},
+			"tooltip": {
+				"Indonesian": ""
+			},
+			"placeholder": {
+				"Indonesian": ""
+			},
+			"tableName": "newsmain"
+		},
+		{
+			"name": "Category",
+			"sqlExpression": "Category",
+			"strField": "Category",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list",
+				"filterTotals": 1
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"Indonesian": "Category"
+			},
+			"tooltip": {
+				"Indonesian": ""
+			},
+			"placeholder": {
+				"Indonesian": ""
+			},
+			"tableName": "newsmain"
+		},
+		{
+			"name": "Subcategory",
+			"sqlExpression": "Subcategory",
+			"strField": "Subcategory",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list",
+				"filterTotals": 1
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"Indonesian": "Subcategory"
+			},
+			"tooltip": {
+				"Indonesian": ""
+			},
+			"placeholder": {
+				"Indonesian": ""
+			},
+			"tableName": "newsmain"
+		},
+		{
+			"name": "SmallDescription",
+			"sqlExpression": "SmallDescription",
+			"strField": "SmallDescription",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textboxMaxLenth": 250,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list",
+				"filterTotals": 1
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"Indonesian": "Description"
+			},
+			"tooltip": {
+				"Indonesian": ""
+			},
+			"placeholder": {
+				"Indonesian": ""
+			},
+			"tableName": "newsmain"
+		},
+		{
+			"name": "FullDescription",
+			"sqlExpression": "FullDescription",
+			"strField": "FullDescription",
+			"type": 201,
+			"viewFormats": [
+				{
+					"format": "HTML",
+					"imageWidth": 0,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"fileShowIcon": false,
+					"videoWidth": 0,
+					"videoHeight": 0,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxSize": 0,
+					"textHTML5Input": "0",
+					"textareaHeight": 250,
+					"lookupType": 0,
+					"fileResizeSize": 0,
+					"fileThumbnailPrefix": "",
+					"fileThumbnailSize": 0,
+					"fileMaxNumber": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list",
+				"filterTotals": 1
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"Indonesian": "Full Description"
+			},
+			"tooltip": {
+				"Indonesian": ""
+			},
+			"placeholder": {
+				"Indonesian": ""
+			},
+			"tableName": "newsmain"
+		},
+		{
+			"name": "news_image",
+			"sqlExpression": "news_image",
+			"strField": "news_image",
+			"type": 200,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"format": "File-based Image",
+					"imageWidth": 800,
+					"imageHeight": 600,
+					"imageCaptions": 1,
+					"imageBorder": false,
+					"customExpression": "$img = my_json_decode($data[\"news_image\"]);  \n$value = \"<span style='background-image:url(\".$img[0][\"name\"].\")' class='list_image'></span>\";",
+					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0
+				},
+				{
+					"format": "Custom",
+					"pageType": "list",
+					"customExpression": "$img = my_json_decode($data[\"news_image\"]);  \n$value = \"<span style='background-image:url(\".$img[0][\"name\"].\")' class='list_image'></span>\";",
+					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0
+				},
+				{
+					"format": "Custom",
+					"pageType": "print",
+					"customExpression": "$img = my_json_decode($data[\"news_image\"]);  \n$value = \"<span style='background-image:url(\".$img[0][\"name\"].\")' class='list_image'></span>\";",
+					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0
+				},
+				{
+					"format": "Custom",
+					"pageType": "export",
+					"customExpression": "$img = my_json_decode($data[\"news_image\"]);  \n$value = \"<span style='background-image:url(\".$img[0][\"name\"].\")' class='list_image'></span>\";",
+					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Document upload",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 500,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Document upload",
+					"pageType": "add",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 500,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Document upload",
+					"pageType": "search",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 500,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "news_image",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"Indonesian": ""
+			},
+			"tooltip": {
+				"Indonesian": ""
+			},
+			"placeholder": {
+				"Indonesian": ""
+			},
+			"tableName": "newsmain"
+		}
+	],
+	"warnLeavingEdit": true,
+	"afterEditDetails": 4,
+	"afterAddDetail": 4,
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFORESHOW_VIEW",
+			"pageType": "view",
+			"code": "$_SESSION[\"EventsName\"]=$values[\"Title\"];\n$_SESSION[\"Body\"]=\"You have been notified about \\\"\" . $_SESSION[\"EventsName\"] . \"\\\" on \" . format_longdate(db2time(now())) . \"\\n\\n\\n\";\n$_SESSION[\"Body\"].=\"To see more details about this news follow the link below:\" . \"\\n\";\n$keys = $pageObject->keys;\n$_SESSION[\"Body\"].=projectUrl().GetTableLink(\"clmain\",\"view\",\"editid1=\".$keys[\"id\"]) . \"\\n\\n\";\n$_SESSION[\"Body\"].=\"Thanks\";\n\n$stylename = \"newsmain view\";\nif (Security::isLoggedIn())\n\t$stylename.=\" LoggedIn\";\n$xt->assign(\"stylename\",$stylename);\n\n\n\n$xt->assign( \"breadcrumbs\", true );\n$xt->assign( \"breadcrumb\", true );\n$xt->assign(\"crumb_home_link\",GetTableLink(\"newsmain\",\"list\"));\n$breadcrumb = array();\n$breadcrumb[] = array(\"crumb_attrs\" => \"href='\".GetTableLink(\"newsmain\",\"list\").\"?f=(Category~equals~\".rawurlencode($values[\"Category\"]).\")'\", \"crumb_title_link\" => true,\"crumb_title\" => $values[\"Category\"]);\n$breadcrumb[] = array(\"crumb_attrs\" => \"\", \"crumb_title_span\" => true,\"crumb_title\" => $values[\"Title\"]);\n$xt->assign_loopsection(\"crumb\", $breadcrumb);\n\n\n$xt->assign(\"pagetitle\",$values[\"Title\"]);"
+		},
+		{
+			"eventId": "EVENT_BEFOREPROCESSROW_LIST",
+			"pageType": "list",
+			"code": "$_SESSION[\"rowcount\"]++;\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "list",
+			"code": "$(\"[data-itemid='mobile_toogle'] button\").click(function(){\n\n\t$(\"body\").toggleClass(\"mobile_toogle\");\n});\nif($(\".r-fluid .r-record-body\").size() >=5){\n\t$(\".r-grid\").prepend('<div data-vcolumns=\"1\" class=\"r-fluid mainfluid r-grid-vertical bs-grid-vertical\" data-location=\"grid\" data-makeup=\"topbar\"></div>');\n\t$(\".mainfluid\").append( $(\".r-fluid .r-record-body\").slice(0,5)); \n\t$(\".r-fluid\").css(\"display\",\"flex\");\n}\n$(\".r-record-body\").click(function(){\n\t var link=document.createElement(\"a\");\n\t link.href = Runner.pages.getUrl(\"newsmain\",\"view\") + \"?editid1=\"+$(this).data(\"dbid\");\n\t link.click();\n});"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "view",
+			"code": "$(\".tellabout\").click(function () {\n    Runner.pages.PageManager.openPage(\n        {\n            tName: \"newsreplyfriend\",\n            modal: true, pageType: Runner.pages.constants.PAGE_ADD, baseParams: { editType: Runner.pages.constants.ADD_POPUP, table: \"newsreplyfriend\" }\n        });\n\treturn false;\n});\n\n$(\".r-images\").click(function(){console.log(1)});"
+		},
+		{
+			"eventId": "EVENT_BEFOREMOVENEXT_LIST",
+			"pageType": "list",
+			"code": "$row[\"rowattrs\"].=$row[\"rowattrs\"].\" data-dbid=\".$data[\"id\"];"
+		},
+		{
+			"eventId": "EVENT_BEFOREPROCESS_LIST",
+			"pageType": "list",
+			"code": "$_SESSION[\"rowcount\"] = 0;\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		},
+		{
+			"eventId": "EVENT_BEFORESHOW_LIST",
+			"pageType": "list",
+			"code": "// ********** Custom code **********\n\n// tanggal hari ini\n$_SESSION[\"Latest\"] = date(\"l, d F, Y\");\n\n$stylename = \"newsmain list\";\nif (Security::isLoggedIn())\n    $stylename .= \" LoggedIn\";\n\nif($_SESSION[\"rowcount\"] < 5){\n    $stylename .= \" less5\";\n}\n$xt->assign(\"stylename\", $stylename);\n\n$twoFactorSettings = getSecurityOption(\"twoFactorSettings\");\n$pagetitle = $twoFactorSettings[\"projectName\"];\n\n$find = array();\npreg_match_all(\"/\\(Category~equals~(.+)\\)/U\", postvalue(\"f\"), $find);\nif(count($find[1]) > 0 && isset($find[1][0])){\n    $pagetitle .= \" -> \" . $find[1][0];\n}\n$xt->assign(\"pagetitle\", $pagetitle);"
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"pages": [
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "Title",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "Posted",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "Category",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "Subcategory",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "SmallDescription",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "FullDescription",
+					"type": "export_field"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"exportFormat": 0,
+			"exportDelimiter": "",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"snippet",
+								"mobile_toogle"
+							],
+							"align": "center"
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"category_menu"
+							]
+						},
+						"c3": {
+							"model": "c1",
+							"items": [
+								"snippet1"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"menu1",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "vertical-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "cell_field6"
+								},
+								{
+									"cell": "cell_top"
+								}
+							],
+							"section": "head"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_field7",
+									"rowspan": 1
+								},
+								{
+									"cell": "cell_field",
+									"rowspan": 1
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_field13"
+								},
+								{
+									"cell": "cell_dpreview"
+								}
+							],
+							"section": "foot"
+						}
+					],
+					"cells": {
+						"cell_top": {
+							"model": "cell_top",
+							"items": [],
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+						},
+						"cell_dpreview": {
+							"model": "cell_dpreview",
+							"items": [],
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field3",
+								"header_category",
+								"simple_grid_field4"
+							],
+							"field": "Category"
+						},
+						"cell_field6": {
+							"model": "cell_top",
+							"items": []
+						},
+						"cell_field7": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							]
+						},
+						"cell_field13": {
+							"model": "cell_dpreview",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"mobile_toogle": {
+					"eventId": "newsmain_mobile_toogle",
+					"label": {
+						"text": "newsmain_mobile_toogle",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 1889229794
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"category_menu": {
+					"eventId": "category_menu",
+					"label": {
+						"text": "category_menu",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 4137566420
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"simple_grid_field3": {
+					"field": "Title",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"header_category": {
+					"field": "Category",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false,
+					"bold": true,
+					"group_by": false
+				},
+				"simple_grid_field4": {
+					"field": "Posted",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false,
+					"italic": true
+				},
+				"grid_field": {
+					"field": "news_image",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"menu": {
+					"type": "menu",
+					"mobileControl": "button",
+					"menuId": "main"
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false,
+					"mobileControl": "button"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					],
+					"bold": true
+				},
+				"snippet": {
+					"eventId": "logo_depan",
+					"label": {
+						"text": "logo_depan",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 332678436
+				},
+				"menu1": {
+					"type": "menu",
+					"mobileControl": "always",
+					"menuId": "secondary"
+				},
+				"snippet1": {
+					"eventId": "Cari1",
+					"label": {
+						"text": "Cari",
+						"type": 0
+					},
+					"type": "snippet",
+					"mobileDisplay": "both",
+					"eventGid": 3365358416
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"menuWidth": "full",
+			"pageAlign": "center",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "Category",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "Subcategory",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "Title",
+					"type": "simple_grid_field",
+					"totals": ""
+				},
+				"simple_grid_field3": {
+					"field": "Posted",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "FullDescription",
+					"type": "simple_grid_field"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field",
+								"integrated_search_field1",
+								"integrated_search_field2",
+								"integrated_search_field3",
+								"integrated_search_field4"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "Title",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field1": {
+					"field": "Posted",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field2": {
+					"field": "Category",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field3": {
+					"field": "Subcategory",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field4": {
+					"field": "news_image",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"prev",
+								"next",
+								"hamburger"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu"
+							]
+						},
+						"c3": {
+							"model": "c3",
+							"items": [
+								"loginform_login",
+								"username_button"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c10",
+									"rowspan": 1,
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c11"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c10": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field4"
+							],
+							"align": "left",
+							"customCSS": "@media (max-width: 768px) {\n    :host {\n        width:100%;\n    }\n}\n"
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field2",
+								"integrated_edit_field5"
+							],
+							"align": "left"
+						},
+						"c1": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field3"
+							],
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host .clearfix{\n  padding-top:10px;\n  padding-bottom:10px;\n  flex-direction: row;\n  align-items: center;\n  \n}\n/*:host .clearfix .r-view-field{\n    flex:auto;\n}*/\n"
+						},
+						"c2": {
+							"model": "c3",
+							"items": []
+						},
+						"c11": {
+							"model": "c3",
+							"items": [],
+							"align": "left",
+							"customCSS": "@media (max-width: 768px) {\n    :host {\n        width:100%;\n    }\n}\n"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": []
+				},
+				"integrated_edit_field": {
+					"field": "Category",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"bold": true,
+					"font-size": "18px"
+				},
+				"integrated_edit_field1": {
+					"field": "Subcategory",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"font-size": "17px"
+				},
+				"integrated_edit_field2": {
+					"field": "Title",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"font-size": "22px",
+					"bold": true
+				},
+				"integrated_edit_field3": {
+					"field": "Posted",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"italic": true
+				},
+				"integrated_edit_field4": {
+					"field": "FullDescription",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true
+				},
+				"integrated_edit_field5": {
+					"field": "news_image",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "news_image",
+						"table": "newsmain",
+						"type": 3
+					}
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"next": {
+					"type": "next"
+				},
+				"prev": {
+					"type": "prev"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"menuWidth": "full",
+			"pageAlign": "center",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "Penmadpidie.com"
+	}
+}

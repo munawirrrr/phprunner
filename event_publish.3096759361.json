@@ -1,0 +1,6 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "publish",
+	"serverCode": "$record = $button->getCurrentRecord();  \n                $data = array();  \n                $data[\"id\"] = $record[\"id\"]; \n                { \n                $sql = \"update newsmain set `kirim` ='1' where `id` =\"   .$data[\"id\"];\n                 DB::Exec($sql);}",
+	"afterJsCode": "location.reload();"
+}

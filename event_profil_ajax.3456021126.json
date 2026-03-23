@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_AJAX",
+	"name": "profil_ajax",
+	"beforeJsCode": "var nsm = row.getFieldValue(\"nsm\");\n    if (nsm) {\n        var url = \"https://appmadrasah.kemenag.go.id/web/profile?nsm=\" + encodeURIComponent(nsm);\n        window.open(url, '_blank');\n    }\n\n    return false; // Supaya tidak kirim permintaan AJAX"
+}

@@ -1,0 +1,2951 @@
+{
+	"securityBusinessTemplate": "News",
+	"app": "PHPRunner",
+	"programVersion": 2,
+	"versionName": "11.1",
+	"build": 39558,
+	"appUser": "PHPRunner 10.6",
+	"name": "home1",
+	"mainDiagram": {
+		"tables": [
+			{
+				"x": 20,
+				"y": 10,
+				"gid": 2174505078,
+				"width": 173.265625,
+				"height": 152
+			},
+			{
+				"x": 195,
+				"y": 10,
+				"gid": 1554571514,
+				"width": 149.15625,
+				"height": 152
+			},
+			{
+				"x": 1204,
+				"y": 138,
+				"width": 140,
+				"height": 34,
+				"gid": 3030998547
+			},
+			{
+				"x": 1374,
+				"y": 138,
+				"width": 168,
+				"height": 34,
+				"gid": 300103937
+			},
+			{
+				"x": 30,
+				"y": 138,
+				"width": 120,
+				"height": 34,
+				"gid": 3804181812
+			},
+			{
+				"x": 30,
+				"y": 202,
+				"width": 169,
+				"height": 34,
+				"gid": 3465064792
+			},
+			{
+				"x": 229,
+				"y": 202,
+				"width": 147,
+				"height": 34,
+				"gid": 4013651249
+			},
+			{
+				"x": 180,
+				"y": 138,
+				"width": 145,
+				"height": 34,
+				"gid": 635495514
+			},
+			{
+				"x": 355,
+				"y": 138,
+				"width": 121,
+				"height": 34,
+				"gid": 1341438908
+			},
+			{
+				"x": 506,
+				"y": 138,
+				"width": 159,
+				"height": 34,
+				"gid": 2668125424
+			},
+			{
+				"x": 695,
+				"y": 138,
+				"width": 169,
+				"height": 34,
+				"gid": 2196276041
+			},
+			{
+				"x": 406,
+				"y": 202,
+				"width": 183,
+				"height": 34,
+				"gid": 3872830103
+			},
+			{
+				"x": 894,
+				"y": 138,
+				"width": 130,
+				"height": 34,
+				"gid": 2576588153
+			},
+			{
+				"x": 1054,
+				"y": 138,
+				"width": 120,
+				"height": 34,
+				"gid": 2375276105
+			}
+		]
+	},
+	"securitySettings": {
+		"projectName": "home",
+		"loginDataSource": "user",
+		"loginForm": 0,
+		"dynamicPermissions": true,
+		"dpTablePrefix": "home_",
+		"dpTableConnId": "Tables",
+		"providers": [
+			{
+				"type": "%db",
+				"activationField": "active",
+				"active": true,
+				"code": "00",
+				"codeField": "",
+				"emailField": "email",
+				"extUserIdField": "",
+				"fullnameField": "username",
+				"label": {
+					"text": "Database",
+					"type": 0
+				},
+				"name": "db",
+				"passwordField": "password",
+				"phoneField": "",
+				"resetDateField": "˂Create new˃",
+				"resetTokenField": "˂Create new˃",
+				"table": {
+					"connId": "Tables",
+					"table": "user"
+				},
+				"twoFactorField": "",
+				"userGroupField": "username",
+				"usernameField": "username",
+				"userpicField": ""
+			},
+			{
+				"active": false,
+				"code": "01",
+				"label": {
+					"text": "Hardcoded",
+					"type": 0
+				},
+				"name": "hardcoded",
+				"password": "",
+				"type": "%hardcoded",
+				"username": ""
+			}
+		],
+		"sessionControl": {
+			"lifeTime": 15,
+			"sessionName": "p9MnXAORfjaFEdzRdwa6",
+			"JWTSecret": "lvmpjBd8cuccTGCIzKko"
+		},
+		"registration": {
+			"remindMethod": 1,
+			"hashAlgorithm": 0,
+			"adminEmail": "",
+			"caseInsensitiveLogin": false,
+			"changePasswordPage": true,
+			"changePwdPage": false,
+			"hashPassword": true,
+			"notifyAdmin": false,
+			"notifyUser": false,
+			"registerPage": false,
+			"remindPage": false,
+			"remindPasswordPage": false,
+			"sendActivationLink": false,
+			"passwordValidation": {
+				"strong": false,
+				"minimumLength": 8,
+				"uniqueCharacters": 4,
+				"digitsAndSymbols": 2,
+				"upperAndLowerCase": false
+			}
+		},
+		"captchaSettings": {
+			"captchaType": 0,
+			"siteKey": "",
+			"secretKey": "",
+			"passesCount": 5
+		},
+		"emailSettings": {
+			"fromEmail": "",
+			"usePHPDefinedSMTP": true,
+			"useBuiltInMailer": false,
+			"SMTPServer": "localhost",
+			"SMTPPort": 25,
+			"SMTPUser": "",
+			"SMTPPassword": "",
+			"securityProtocol": 0
+		},
+		"advancedSecurity": {
+			"allowGuestLogin": true,
+			"tables": {
+				"admin_members": {
+					"mainOwnerIDField": "",
+					"securityOption": 0,
+					"userOwnerIDField": ""
+				},
+				"admin_rights": {
+					"mainOwnerIDField": "",
+					"securityOption": 0,
+					"userOwnerIDField": ""
+				},
+				"admin_users": {
+					"mainOwnerIDField": "",
+					"securityOption": 0,
+					"userOwnerIDField": ""
+				},
+				"newsadmin_main": {
+					"mainOwnerIDField": "Subcategory",
+					"securityOption": 1,
+					"userOwnerIDField": "fullname"
+				},
+				"newsall_news": {
+					"mainOwnerIDField": "",
+					"securityOption": 0,
+					"userOwnerIDField": "id"
+				},
+				"newscategory": {
+					"mainOwnerIDField": "",
+					"securityOption": 0,
+					"userOwnerIDField": "id"
+				},
+				"newsmain": {
+					"mainOwnerIDField": "id",
+					"securityOption": 0,
+					"userOwnerIDField": "ID"
+				},
+				"newsreplyfriend": {
+					"mainOwnerIDField": "",
+					"securityOption": 0,
+					"userOwnerIDField": ""
+				},
+				"newssubcategory": {
+					"mainOwnerIDField": "id_user",
+					"securityOption": 1,
+					"userOwnerIDField": "username"
+				},
+				"profil": {
+					"mainOwnerIDField": "nsm",
+					"securityOption": 1,
+					"userOwnerIDField": "username"
+				},
+				"user": {
+					"mainOwnerIDField": "",
+					"securityOption": 0,
+					"userOwnerIDField": ""
+				}
+			}
+		},
+		"auditAndLocking": {
+			"loggingMode": 0,
+			"loggingTable": {
+				"connId": "Tables",
+				"table": ""
+			},
+			"loggingFile": "audit.log",
+			"logSecurityActions": false,
+			"lockAfterUnsuccessfulLogin": false,
+			"enableLocking": false,
+			"lockingTable": {
+				"connId": "Tables",
+				"table": ""
+			},
+			"tables": {}
+		},
+		"twoFactorSettings": {
+			"available": false,
+			"required": false,
+			"enable": true,
+			"remember": true,
+			"types": {
+				"totp": true
+			},
+			"twoFactorField": "˂Create new˃",
+			"emailField": "email",
+			"phoneField": "˂Create new˃",
+			"codeField": "˂Create new˃",
+			"projectName": "penmad pidie"
+		},
+		"staticPermissions": {
+			"groups": {
+				"<Default>": {
+					"permissions": {
+						"<global>": {
+							"mask": "ADESPI",
+							"table": "<global>",
+							"restrictedPages": {}
+						},
+						"newsadmin_main": {
+							"mask": "AEDSP",
+							"table": "newsadmin_main",
+							"restrictedPages": {}
+						},
+						"newsall_news": {
+							"mask": "",
+							"table": "newsall_news",
+							"restrictedPages": {}
+						},
+						"newscategory": {
+							"mask": "AEDSP",
+							"table": "newscategory",
+							"restrictedPages": {}
+						},
+						"newsmain": {
+							"mask": "",
+							"table": "newsmain",
+							"restrictedPages": {}
+						},
+						"newsreplyfriend": {
+							"mask": "AEDSP",
+							"table": "newsreplyfriend",
+							"restrictedPages": {}
+						},
+						"newssubcategory": {
+							"mask": "ADESPI",
+							"table": "newssubcategory",
+							"restrictedPages": {}
+						},
+						"admin_rights": {
+							"mask": "ADESPI",
+							"table": "admin_rights",
+							"restrictedPages": {}
+						},
+						"admin_members": {
+							"mask": "ADESPI",
+							"table": "admin_members",
+							"restrictedPages": {}
+						},
+						"user": {
+							"mask": "ADESPI",
+							"table": "user",
+							"restrictedPages": {}
+						},
+						"admin_users": {
+							"mask": "ADESPI",
+							"table": "admin_users",
+							"restrictedPages": {}
+						},
+						"profil": {
+							"mask": "ADESPI",
+							"table": "profil",
+							"restrictedPages": {}
+						},
+						"my_skp": {
+							"mask": "ADESPI",
+							"table": "my_skp",
+							"restrictedPages": {}
+						},
+						"siswa_baru": {
+							"mask": "ADESPI",
+							"table": "siswa_baru",
+							"restrictedPages": {}
+						},
+						"lap_siswa_baru": {
+							"mask": "ADESPI",
+							"table": "lap_siswa_baru",
+							"restrictedPages": {}
+						}
+					},
+					"username": "<Default>",
+					"admin": false,
+					"wrAdmin": false
+				},
+				"<Guest>": {
+					"permissions": {
+						"<global>": {
+							"mask": "S",
+							"table": "<global>",
+							"restrictedPages": {}
+						},
+						"newsadmin_main": {
+							"mask": "",
+							"table": "newsadmin_main",
+							"restrictedPages": {}
+						},
+						"newsall_news": {
+							"mask": "SP",
+							"table": "newsall_news",
+							"restrictedPages": {}
+						},
+						"newscategory": {
+							"mask": "",
+							"table": "newscategory",
+							"restrictedPages": {}
+						},
+						"newsmain": {
+							"mask": "SP",
+							"table": "newsmain",
+							"restrictedPages": {}
+						},
+						"newsreplyfriend": {
+							"mask": "A",
+							"table": "newsreplyfriend",
+							"restrictedPages": {}
+						},
+						"newssubcategory": {
+							"mask": "S",
+							"table": "newssubcategory",
+							"restrictedPages": {}
+						},
+						"admin_rights": {
+							"mask": "S",
+							"table": "admin_rights",
+							"restrictedPages": {}
+						},
+						"admin_members": {
+							"mask": "S",
+							"table": "admin_members",
+							"restrictedPages": {}
+						},
+						"user": {
+							"mask": "S",
+							"table": "user",
+							"restrictedPages": {}
+						},
+						"admin_users": {
+							"mask": "S",
+							"table": "admin_users",
+							"restrictedPages": {}
+						},
+						"profil": {
+							"mask": "S",
+							"table": "profil",
+							"restrictedPages": {}
+						},
+						"my_skp": {
+							"mask": "S",
+							"table": "my_skp",
+							"restrictedPages": {}
+						},
+						"siswa_baru": {
+							"mask": "S",
+							"table": "siswa_baru",
+							"restrictedPages": {}
+						},
+						"lap_siswa_baru": {
+							"mask": "S",
+							"table": "lap_siswa_baru",
+							"restrictedPages": {}
+						}
+					},
+					"username": "<Guest>",
+					"admin": false,
+					"wrAdmin": false
+				}
+			}
+		}
+	},
+	"encryption": {
+		"connEncryptInfo": {
+			"Tables": {
+				"encryptAlgorithm": 128,
+				"connId": "Tables"
+			}
+		}
+	},
+	"visualStudioVersion": 10,
+	"restAPIReturnEncodedBinary": "",
+	"restAPIAcceptEncodedBinary": "",
+	"lcid": 1057,
+	"defaultLanguage": "Indonesian",
+	"languages": [
+		"Indonesian"
+	],
+	"emailTemplates": {
+		"Indonesian": {}
+	},
+	"dbConnections": [
+		{
+			"id": "Tables",
+			"name": "penmadpi_home at penmadpidie.com",
+			"connString": "mysql;penmadpidie.com;penmadpi;##munazara1979;;penmadpi_home;;1",
+			"buildParams": {
+				"customConnections": [
+					{
+						"name": "home",
+						"code": "$host=\"localhost\";\n$user=\"penmadpi_admin\";\n$pwd=\"##munazara1979\";\n$port=\"\";\n$sys_dbname=\"penmadpi_home\";"
+					},
+					{
+						"name": "arent_host",
+						"code": "$host=\"localhost\";\n$user=\"penmadpi\";\n$pwd=\"##munazara1979\";\n$port=\"\";\n$sys_dbname=\"penmadpi_home\";"
+					}
+				],
+				"selectedCustomConn": "home"
+			}
+		}
+	],
+	"defaultConnID": "Tables",
+	"landingSettings": {
+		"table": "newsmain",
+		"pageId": "",
+		"page": "list",
+		"url": "newsmain_list.php"
+	},
+	"copyFieldSettings": {
+		"copyViewFormat": ""
+	},
+	"createAppSettings": {
+		"appVersion": "",
+		"appURL": ""
+	},
+	"menus": [
+		{
+			"id": "main",
+			"root": {
+				"children": [
+					{
+						"id": "1",
+						"parent": "0",
+						"data": {
+							"name": {
+								"text": "News",
+								"type": 0
+							},
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"pageType": "list",
+							"table": 3465064792
+						}
+					},
+					{
+						"id": "2",
+						"parent": "0",
+						"data": {
+							"name": {
+								"text": "Seksi",
+								"type": 0
+							},
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"pageType": "list",
+							"table": 635495514
+						}
+					},
+					{
+						"id": "3",
+						"parent": "0",
+						"data": {
+							"name": {
+								"text": "Topik",
+								"type": 0
+							},
+							"href": "mypage.htm",
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-shopping-cart",
+							"showIconType": 2,
+							"pageType": "list",
+							"table": 2196276041
+						}
+					},
+					{
+						"id": "4",
+						"parent": "0",
+						"children": [
+							{
+								"id": "5",
+								"parent": "4",
+								"data": {
+									"name": {
+										"text": "sispendik",
+										"type": 0
+									},
+									"href": "https://sispendik.penmadpidie.com/menu.php",
+									"pageId": "list",
+									"itemType": 2,
+									"linkType": 1,
+									"iconType": 2,
+									"iconName": "glyphicon-user",
+									"linkToAnotherApp": true,
+									"pageType": "",
+									"table": null
+								}
+							},
+							{
+								"id": "6",
+								"parent": "4",
+								"data": {
+									"name": {
+										"text": "sibay",
+										"type": 0
+									},
+									"href": "https://sibay.penmadpidie.com/menu.php",
+									"itemType": 2,
+									"linkType": 1,
+									"linkToAnotherApp": true,
+									"pageType": "",
+									"table": null
+								}
+							},
+							{
+								"id": "7",
+								"parent": "4",
+								"data": {
+									"name": {
+										"text": "Persuratan",
+										"type": 0
+									},
+									"href": "https://surat.penmadpidie.com/jenis_surat_list.php",
+									"itemType": 2,
+									"linkType": 1,
+									"pageType": "",
+									"table": null
+								}
+							}
+						],
+						"data": {
+							"name": {
+								"text": "Aplikasi",
+								"type": 0
+							},
+							"pageType": "",
+							"table": null
+						}
+					},
+					{
+						"id": "8",
+						"parent": "0",
+						"data": {
+							"name": {
+								"table": "my_skp",
+								"type": 6
+							},
+							"href": "mypage.htm",
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-briefcase",
+							"showIconType": 2,
+							"pageType": "list",
+							"table": 3804181812
+						}
+					},
+					{
+						"id": "9",
+						"parent": "0",
+						"data": {
+							"name": {
+								"table": "siswa_baru",
+								"type": 6
+							},
+							"href": "mypage.htm",
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-calendar",
+							"showIconType": 2,
+							"pageType": "list",
+							"table": 2576588153
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "secondary",
+			"id": "secondary",
+			"root": {
+				"children": [
+					{
+						"id": "1",
+						"parent": "0",
+						"data": {
+							"name": {
+								"text": "Profil madrasah",
+								"type": 0
+							},
+							"href": "mypage.htm",
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"pageType": "list",
+							"table": 3872830103
+						}
+					},
+					{
+						"id": "2",
+						"parent": "0",
+						"data": {
+							"name": {
+								"table": "siswa_baru",
+								"type": 6
+							},
+							"href": "mypage.htm",
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"pageType": "list",
+							"table": 2576588153
+						}
+					}
+				]
+			}
+		}
+	],
+	"customTemplates": {
+		"footer": "<style>\r\n  .footer {\r\n    background-color:transparent; /* Soft grey like macOS */\r\n    color: #555;               /* Dark grey text */\r\n    padding: 20px;\r\n    --padding-top: 600px;\r\n    text-align: center;\r\n    -border-top: 1px solid #ccc;\r\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen,\r\n                 Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\r\n    -box-shadow: 0 -1px 5px rgba(0,0,0,0.05); /* subtle shadow for depth */\r\n  }\r\n\r\n  .footer-logo {\r\n    height: 60px;\r\n    margin-bottom: 10px;\r\n  }\r\n\r\n  .footer-text {\r\n    max-width: 600px;\r\n    margin: 0 auto;\r\n    font-size: 14px;\r\n    line-height: 1.6;\r\n  }\r\n\r\n  @media (max-width: 600px) {\r\n    .footer {\r\n      padding: 15px 10px;\r\n    }\r\n\r\n    .footer-text {\r\n      font-size: 13px;\r\n    }\r\n\r\n    .footer-logo {\r\n      height: 50px;\r\n    }\r\n  }\r\n</style>\r\n\r\n<footer class=\"footer\">\r\n  <img src=\"https://appmadrasah.kemenag.go.id/__statics/img/logo.png\" alt=\"Logo Kemenag\" class=\"footer-logo\">\r\n  <div class=\"footer-text\">\r\n    <strong>Kantor Kementerian Agama Kab. Pidie</strong><br>\r\n    All Rights Reserved<br>\r\n    Alamat: Jalan Kuala Nomor 5, Sigli, Kab. Pidie, Provinsi Aceh, Indonesia\r\n  </div>\r\n</footer>\r\n"
+	},
+	"globalPages": [
+		{
+			"id": "admin_members_list",
+			"type": "admin_members_list",
+			"layoutId": "leftbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "admin-members-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"members_save",
+								"members_reset"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"members_choose_columns",
+								"members_displaying_filter"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "admin-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "admin-leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "admin-leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "admin-header",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "admin-members-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "hcell_source"
+								},
+								{
+									"cell": "hcell_username"
+								},
+								{
+									"cell": "hcell_displayname"
+								},
+								{
+									"cell": "hcell_email"
+								},
+								{
+									"cell": "hcell_groupname"
+								}
+							],
+							"section": "head"
+						},
+						{
+							"cells": [
+								{
+									"cell": "hcell_source1"
+								},
+								{
+									"cell": "hcell_search",
+									"colspan": 3
+								},
+								{
+									"cell": "hcell_all_checkbox"
+								}
+							],
+							"section": "head"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_source"
+								},
+								{
+									"cell": "cell_u"
+								},
+								{
+									"cell": "cell_dn"
+								},
+								{
+									"cell": "cell_e"
+								},
+								{
+									"cell": "c_gn"
+								}
+							],
+							"section": "body"
+						}
+					],
+					"cells": {
+						"hcell_source": {
+							"model": "hcell_source",
+							"items": [
+								"members_source_label"
+							]
+						},
+						"hcell_username": {
+							"model": "hcell_username",
+							"items": [
+								"members_username_label"
+							]
+						},
+						"hcell_displayname": {
+							"model": "hcell_displayname",
+							"items": [
+								"members_displayname_label"
+							]
+						},
+						"hcell_email": {
+							"model": "hcell_email",
+							"items": [
+								"members_email_label"
+							]
+						},
+						"hcell_groupname": {
+							"model": "hcell_groupname",
+							"items": [
+								"members_groupname_label"
+							]
+						},
+						"hcell_source1": {
+							"model": "hcell_source1",
+							"items": [
+								"members_source_filter"
+							]
+						},
+						"hcell_search": {
+							"model": "hcell_search",
+							"items": [
+								"members_search"
+							]
+						},
+						"hcell_all_checkbox": {
+							"model": "hcell_all_checkbox",
+							"items": [
+								"members_all_users_checkbox"
+							]
+						},
+						"cell_source": {
+							"model": "cell_source",
+							"items": [
+								"members_source"
+							]
+						},
+						"cell_u": {
+							"model": "cell_u",
+							"items": [
+								"members_all_groups_checkbox",
+								"members_username"
+							]
+						},
+						"cell_dn": {
+							"model": "cell_dn",
+							"items": [
+								"members_displayname"
+							]
+						},
+						"cell_e": {
+							"model": "cell_e",
+							"items": [
+								"members_email"
+							]
+						},
+						"c_gn": {
+							"model": "c_gn",
+							"items": [
+								"members_group_checkbox"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"members_save": {
+					"type": "members_save"
+				},
+				"members_reset": {
+					"type": "members_reset"
+				},
+				"members_choose_columns": {
+					"type": "members_choose_columns"
+				},
+				"members_displaying_filter": {
+					"type": "members_displaying_filter"
+				},
+				"members_source_label": {
+					"type": "members_source_label"
+				},
+				"members_username_label": {
+					"type": "members_username_label"
+				},
+				"members_displayname_label": {
+					"type": "members_displayname_label"
+				},
+				"members_email_label": {
+					"type": "members_email_label"
+				},
+				"members_groupname_label": {
+					"type": "members_groupname_label"
+				},
+				"members_source_filter": {
+					"type": "members_source_filter"
+				},
+				"members_search": {
+					"type": "members_search"
+				},
+				"members_all_users_checkbox": {
+					"type": "members_all_users_checkbox"
+				},
+				"members_source": {
+					"type": "members_source"
+				},
+				"members_all_groups_checkbox": {
+					"type": "members_all_groups_checkbox"
+				},
+				"members_username": {
+					"type": "members_username"
+				},
+				"members_displayname": {
+					"type": "members_displayname"
+				},
+				"members_email": {
+					"type": "members_email"
+				},
+				"members_group_checkbox": {
+					"type": "members_group_checkbox"
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"exit_adminarea_link": {
+					"type": "exit_adminarea_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"exit_adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "admin_rights_list",
+			"type": "admin_rights_list",
+			"layoutId": "leftbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "admin-rights-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"rights_save",
+								"rights_reset"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"rights_displaying_tables",
+								"rights_ordering_tables"
+							]
+						},
+						"c4": {
+							"model": "c4",
+							"items": [
+								"rights_add_group",
+								"rights_del_group",
+								"rights_rename_group",
+								"rights_copy_permissions"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "admin-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "admin-leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "admin-leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "admin-header",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "admin-rights-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "headcell_search"
+								},
+								{
+									"cell": "headcell_a"
+								},
+								{
+									"cell": "headcell_e"
+								},
+								{
+									"cell": "headcell_d"
+								},
+								{
+									"cell": "headcell_s"
+								},
+								{
+									"cell": "headcell_p"
+								},
+								{
+									"cell": "headcell_i"
+								},
+								{
+									"cell": "headcell_m"
+								}
+							],
+							"section": "head"
+						},
+						{
+							"cells": [
+								{
+									"cell": "headcell_expand"
+								},
+								{
+									"cell": "headcell_all_a"
+								},
+								{
+									"cell": "headcell_all_e"
+								},
+								{
+									"cell": "headcell_all_d"
+								},
+								{
+									"cell": "headcell_all_s"
+								},
+								{
+									"cell": "headcell_all_p"
+								},
+								{
+									"cell": "headcell_all_i"
+								},
+								{
+									"cell": "headcell_all_m"
+								}
+							],
+							"section": "head"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_table"
+								},
+								{
+									"cell": "cell_a"
+								},
+								{
+									"cell": "cell_e"
+								},
+								{
+									"cell": "cell_d"
+								},
+								{
+									"cell": "cell_s"
+								},
+								{
+									"cell": "cell_p"
+								},
+								{
+									"cell": "cell_i"
+								},
+								{
+									"cell": "cell_m"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_page"
+								},
+								{
+									"cell": "cell_page_a"
+								},
+								{
+									"cell": "cell_page_e"
+								},
+								{
+									"cell": "cell_page_d"
+								},
+								{
+									"cell": "cell_page_s"
+								},
+								{
+									"cell": "cell_page_p"
+								},
+								{
+									"cell": "cell_page_i"
+								},
+								{
+									"cell": "cell_page_m"
+								}
+							],
+							"section": "page"
+						}
+					],
+					"cells": {
+						"headcell_search": {
+							"model": "headcell_search",
+							"items": [
+								"rights_search"
+							]
+						},
+						"headcell_a": {
+							"model": "headcell_a",
+							"items": [
+								"rights_name_a"
+							]
+						},
+						"headcell_e": {
+							"model": "headcell_e",
+							"items": [
+								"rights_name_e"
+							]
+						},
+						"headcell_d": {
+							"model": "headcell_d",
+							"items": [
+								"rights_name_d"
+							]
+						},
+						"headcell_s": {
+							"model": "headcell_s",
+							"items": [
+								"rights_name_s"
+							]
+						},
+						"headcell_p": {
+							"model": "headcell_p",
+							"items": [
+								"rights_name_p"
+							]
+						},
+						"headcell_i": {
+							"model": "headcell_i",
+							"items": [
+								"rights_name_i"
+							]
+						},
+						"headcell_m": {
+							"model": "headcell_m",
+							"items": [
+								"rights_name_m",
+								"rights_name_m1"
+							]
+						},
+						"cell_page": {
+							"model": "cell_page",
+							"items": [
+								"rights_checkbox_page",
+								"rights_page"
+							]
+						},
+						"cell_page_a": {
+							"model": "cell_page_a",
+							"items": [
+								"rights_checkbox_page_a"
+							]
+						},
+						"cell_page_e": {
+							"model": "cell_page_e",
+							"items": [
+								"rights_checkbox_page_e"
+							]
+						},
+						"cell_page_d": {
+							"model": "cell_page_d",
+							"items": [
+								"rights_checkbox_page_d"
+							]
+						},
+						"cell_page_s": {
+							"model": "cell_page_s",
+							"items": [
+								"rights_checkbox_page_s"
+							]
+						},
+						"cell_page_p": {
+							"model": "cell_page_p",
+							"items": [
+								"rights_checkbox_page_p"
+							]
+						},
+						"cell_page_i": {
+							"model": "cell_page_i",
+							"items": [
+								"rights_checkbox_page_i"
+							]
+						},
+						"cell_page_m": {
+							"model": "cell_page_m",
+							"items": []
+						},
+						"headcell_expand": {
+							"model": "headcell_expand",
+							"items": [
+								"rights_expand_all"
+							]
+						},
+						"headcell_all_a": {
+							"model": "headcell_all_a",
+							"items": [
+								"rights_checkbox_all_a"
+							]
+						},
+						"headcell_all_e": {
+							"model": "headcell_all_e",
+							"items": [
+								"rights_checkbox_all_e"
+							]
+						},
+						"headcell_all_d": {
+							"model": "headcell_all_d",
+							"items": [
+								"rights_checkbox_all_d"
+							]
+						},
+						"headcell_all_s": {
+							"model": "headcell_all_s",
+							"items": [
+								"rights_checkbox_all_s"
+							]
+						},
+						"headcell_all_p": {
+							"model": "headcell_all_p",
+							"items": [
+								"rights_checkbox_all_p"
+							]
+						},
+						"headcell_all_i": {
+							"model": "headcell_all_i",
+							"items": [
+								"rights_checkbox_all_i"
+							]
+						},
+						"headcell_all_m": {
+							"model": "headcell_all_m",
+							"items": [
+								"rights_checkbox_all_m"
+							]
+						},
+						"cell_table": {
+							"model": "cell_table",
+							"items": [
+								"rights_checkbox_table",
+								"rights_table",
+								"rights_show_pages",
+								"rights_hide_pages",
+								"rights_group_expander"
+							]
+						},
+						"cell_a": {
+							"model": "cell_a",
+							"items": [
+								"rights_checkbox_a"
+							]
+						},
+						"cell_e": {
+							"model": "cell_e",
+							"items": [
+								"rights_checkbox_e"
+							]
+						},
+						"cell_d": {
+							"model": "cell_d",
+							"items": [
+								"rights_checkbox_d"
+							]
+						},
+						"cell_s": {
+							"model": "cell_s",
+							"items": [
+								"rights_checkbox_s"
+							]
+						},
+						"cell_p": {
+							"model": "cell_p",
+							"items": [
+								"rights_checkbox_p"
+							]
+						},
+						"cell_i": {
+							"model": "cell_i",
+							"items": [
+								"rights_checkbox_i"
+							]
+						},
+						"cell_m": {
+							"model": "cell_m",
+							"items": [
+								"rights_checkbox_m"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"rights_save": {
+					"type": "rights_save"
+				},
+				"rights_reset": {
+					"type": "rights_reset"
+				},
+				"rights_displaying_tables": {
+					"type": "rights_displaying_tables"
+				},
+				"rights_ordering_tables": {
+					"type": "rights_ordering_tables"
+				},
+				"rights_add_group": {
+					"type": "rights_add_group"
+				},
+				"rights_del_group": {
+					"type": "rights_del_group"
+				},
+				"rights_rename_group": {
+					"type": "rights_rename_group"
+				},
+				"rights_copy_permissions": {
+					"type": "rights_copy_permissions"
+				},
+				"rights_search": {
+					"type": "rights_search"
+				},
+				"rights_name_a": {
+					"type": "rights_name_a"
+				},
+				"rights_name_e": {
+					"type": "rights_name_e"
+				},
+				"rights_name_d": {
+					"type": "rights_name_d"
+				},
+				"rights_name_s": {
+					"type": "rights_name_s"
+				},
+				"rights_name_p": {
+					"type": "rights_name_p"
+				},
+				"rights_name_i": {
+					"type": "rights_name_i"
+				},
+				"rights_name_m": {
+					"type": "rights_name_m"
+				},
+				"rights_name_m1": {
+					"type": "rights_name_m1"
+				},
+				"rights_checkbox_page": {
+					"type": "rights_checkbox_page"
+				},
+				"rights_page": {
+					"type": "rights_page"
+				},
+				"rights_checkbox_page_a": {
+					"type": "rights_checkbox_page_a"
+				},
+				"rights_checkbox_page_e": {
+					"type": "rights_checkbox_page_e"
+				},
+				"rights_checkbox_page_d": {
+					"type": "rights_checkbox_page_d"
+				},
+				"rights_checkbox_page_s": {
+					"type": "rights_checkbox_page_s"
+				},
+				"rights_checkbox_page_p": {
+					"type": "rights_checkbox_page_p"
+				},
+				"rights_checkbox_page_i": {
+					"type": "rights_checkbox_page_i"
+				},
+				"rights_expand_all": {
+					"type": "rights_expand_all"
+				},
+				"rights_checkbox_all_a": {
+					"type": "rights_checkbox_all_a"
+				},
+				"rights_checkbox_all_e": {
+					"type": "rights_checkbox_all_e"
+				},
+				"rights_checkbox_all_d": {
+					"type": "rights_checkbox_all_d"
+				},
+				"rights_checkbox_all_s": {
+					"type": "rights_checkbox_all_s"
+				},
+				"rights_checkbox_all_p": {
+					"type": "rights_checkbox_all_p"
+				},
+				"rights_checkbox_all_i": {
+					"type": "rights_checkbox_all_i"
+				},
+				"rights_checkbox_all_m": {
+					"type": "rights_checkbox_all_m"
+				},
+				"rights_checkbox_table": {
+					"type": "rights_checkbox_table"
+				},
+				"rights_table": {
+					"type": "rights_table"
+				},
+				"rights_show_pages": {
+					"type": "rights_show_pages"
+				},
+				"rights_hide_pages": {
+					"type": "rights_hide_pages"
+				},
+				"rights_group_expander": {
+					"type": "rights_group_expander"
+				},
+				"rights_checkbox_a": {
+					"type": "rights_checkbox_a"
+				},
+				"rights_checkbox_e": {
+					"type": "rights_checkbox_e"
+				},
+				"rights_checkbox_d": {
+					"type": "rights_checkbox_d"
+				},
+				"rights_checkbox_s": {
+					"type": "rights_checkbox_s"
+				},
+				"rights_checkbox_p": {
+					"type": "rights_checkbox_p"
+				},
+				"rights_checkbox_i": {
+					"type": "rights_checkbox_i"
+				},
+				"rights_checkbox_m": {
+					"type": "rights_checkbox_m"
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"exit_adminarea_link": {
+					"type": "exit_adminarea_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"exit_adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "changepwd",
+			"type": "changepwd",
+			"layoutId": "first",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "changepwd-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"changepwd_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "changepwd-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"changepwd_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "changepwd-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c4"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"oldpass_label"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"oldpass"
+							]
+						},
+						"c3": {
+							"model": "c3",
+							"items": [
+								"newpass_label"
+							]
+						},
+						"c4": {
+							"model": "c4",
+							"items": [
+								"newpass"
+							]
+						},
+						"c5": {
+							"model": "c5",
+							"items": [
+								"confirm_label"
+							]
+						},
+						"c6": {
+							"model": "c6",
+							"items": [
+								"confirm"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "changepwd-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"changepwd_button",
+								"changepwd_back"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"oldpass_label": {
+					"type": "oldpass_label"
+				},
+				"newpass_label": {
+					"type": "newpass_label"
+				},
+				"confirm_label": {
+					"type": "confirm_label"
+				},
+				"oldpass": {
+					"type": "oldpass"
+				},
+				"newpass": {
+					"type": "newpass"
+				},
+				"confirm": {
+					"type": "confirm"
+				},
+				"changepwd_message": {
+					"type": "changepwd_message"
+				},
+				"changepwd_button": {
+					"type": "changepwd_button"
+				},
+				"changepwd_back": {
+					"type": "changepwd_back"
+				},
+				"changepwd_header": {
+					"type": "changepwd_header"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "changepwd_success",
+			"type": "changepwd_success",
+			"layoutId": "first",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "changepwd-success-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"changepwd_success_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "changepwd-success-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"changepwd_success_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "changepwd-success-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"changepwd_success_back"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"changepwd_success_message": {
+					"type": "changepwd_success_message"
+				},
+				"changepwd_success_back": {
+					"type": "changepwd_success_back"
+				},
+				"changepwd_success_header": {
+					"type": "changepwd_success_header"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "login_News1",
+			"type": "login",
+			"layoutId": "pretty1",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "login-above-grid",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"login_message"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						},
+						"c": {
+							"model": "c1",
+							"items": [],
+							"align": "center"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "plogin-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c3",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"login-logo"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": []
+						},
+						"c3": {
+							"model": "c3",
+							"items": [
+								"login_welcome"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "plogin-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"username_label",
+								"username"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"password_label",
+								"password"
+							]
+						},
+						"c4": {
+							"model": "c4",
+							"items": [
+								"remember_password"
+							]
+						},
+						"c6": {
+							"model": "c6",
+							"items": [
+								"guest_login"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "plogin-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"login_button"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"superbottom": {
+					"modelId": "plogin-superbottom",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"login_message": {
+					"type": "login_message"
+				},
+				"username_label": {
+					"type": "username_label"
+				},
+				"username": {
+					"type": "username"
+				},
+				"password_label": {
+					"type": "password_label"
+				},
+				"password": {
+					"type": "password"
+				},
+				"remember_password": {
+					"type": "remember_password"
+				},
+				"login_button": {
+					"type": "login_button"
+				},
+				"guest_login": {
+					"type": "guest_login",
+					"label": {
+						"type": 0,
+						"text": "Kembali"
+					},
+					"icon": {
+						"glyph": "home"
+					}
+				},
+				"login-logo": {
+					"type": "login-logo",
+					"font-size": "24px"
+				},
+				"login_welcome": {
+					"type": "login_welcome",
+					"label": {
+						"type": 0,
+						"text": "login"
+					}
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"imageItem": {
+				"type": "page_image",
+				"shadow": false,
+				"fullSize": true,
+				"image": {
+					"source": 1,
+					"image": "pexels-vlada-karpovich-4050287.jpg"
+				}
+			},
+			"imageBgColor": "transparent",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "menu_News1",
+			"type": "menu",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 4,
+			"forms": {
+				"supertop": {
+					"modelId": "menu-topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"loginform_login",
+								"username_button"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"above-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"breadcrumb"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "welcome",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"snippet"
+							],
+							"_t": "Map",
+							"_i": {},
+							"_s": 0
+						},
+						"c": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"snippet": {
+					"eventId": "alihke_dashboard",
+					"label": {
+						"text": "alihke_dashboard",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2162362097
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"businessTemplate": "News",
+			"businessTemplatePageId": "menu_News",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"welcomePageStay": true,
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "userinfo_News",
+			"type": "userinfo",
+			"layoutId": "leftbar",
+			"disabled": 0,
+			"default": 3,
+			"forms": {
+				"above-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "empty-above-grid",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "userinfo-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "fields_message"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "fields"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "buttons"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"fields_message": {
+							"model": "fields_message",
+							"items": [
+								"user_fields_title",
+								"fields_message"
+							]
+						},
+						"buttons": {
+							"model": "buttons",
+							"items": [
+								"user_fields_reset",
+								"user_fields_save"
+							]
+						},
+						"fields": {
+							"model": "fields",
+							"items": [
+								"changepassword_link",
+								"integrated_user_field",
+								"integrated_edit_field"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"fields_message": {
+					"type": "fields_message"
+				},
+				"user_fields_reset": {
+					"type": "user_fields_reset"
+				},
+				"user_fields_save": {
+					"type": "user_fields_save"
+				},
+				"user_fields_title": {
+					"type": "user_fields_title",
+					"font-size": "24px"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"integrated_user_field": {
+					"field": "username",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				}
+			},
+			"dbProps": {},
+			"version": 11,
+			"businessTemplate": "News",
+			"businessTemplatePageId": "userinfo_News1",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_JS_CUSTOM_FUNCTIONS",
+			"code": "$(document).ready(function(){\nvar originalCreateMasonry = Runner.viewControls.ViewImageField.prototype.createMasonry;\nRunner.viewControls.ViewImageField.prototype.createMasonry = function($img, cssPrefix, images) {\n\t/*if(this.table === \"newsmain\" && this.pageType === \"view\")\n\t\timages = [images.shift()];\n   originalCreateMasonry.call(this,$img, cssPrefix, images);\n}*/\n\n});"
+		}
+	],
+	"projectStyle": {
+		"theme": "yeti",
+		"sidebarWidth": "250px",
+		"sidebarTheme": "custom",
+		"topbarTheme": "legacy",
+		"logoTheme": "dark",
+		"fixedTopbar": true,
+		"sidebarCustomThemeColor": "#899099",
+		"topbarCustomThemeColor": "#333333",
+		"customCss": "span.r {\r\n    font-size: 10px;\r\n}",
+		"verticalBorders": false,
+		"stripedGrid": false,
+		"condensedGrid": true,
+		"rolloverHighlight": true,
+		"gpPanelBorder": "1px"
+	},
+	"styleOverrides": [
+		{
+			"table": 1341438908,
+			"page": "list",
+			"style": {
+				"condensedGrid": false,
+				"direction": "ltr",
+				"fixedSidebar": true,
+				"fixedTopbar": true,
+				"gcEvenBg": "",
+				"gcEvenColor": "",
+				"gcOddBg": "",
+				"gcOddColor": "",
+				"gcRolloverHighlightBg": "",
+				"gcRolloverHighlightColor": "",
+				"gpBorderColor": "",
+				"gpFooterBg": "",
+				"gpHeaderBg": "",
+				"gpHeaderColor": "",
+				"gpInnerBorder": "",
+				"gpInnerBorderColor": "",
+				"gpPanelBorder": "1px",
+				"logoCustomThemeColor": "",
+				"logoTheme": "white",
+				"menuStyle": "rounded",
+				"panelLikeGrid": false,
+				"rolloverHighlight": true,
+				"sidebarColor": "light",
+				"sidebarCompact": false,
+				"sidebarCustomThemeColor": "",
+				"sidebarTheme": "legacy",
+				"sidebarWidth": "250px",
+				"size": "normal",
+				"stripedGrid": false,
+				"theme": "spacelab",
+				"topbarCustomThemeColor": "#ffffff",
+				"topbarGradient": false,
+				"topbarLegacy": false,
+				"topbarTheme": "custom",
+				"verticalBorders": false,
+				"customCss": "@media (min-width: 767px) {\n    .navbar-nav {\n        padding-left: 180px !important;\n    }\n}\n\n\nnav#form_supertop_1 {\n    background: #f2f4f4;\n    \n    box-shadow: none;\n}\n\n\n@media (min-width: 769px) {\n  [data-location] > .row > .r-align-center {\n    display: flex;\n    justify-content: center;  /* Pusat horizontal */\n    align-items: center;      /* Pusat vertikal */\n    text-align: center;\n    display:none;\n              /* Pastikan tinggi cukup */\n  }\n}\n\n\nbody{\n     background:#f2f4f4;\n        \n}\n\n\n@media (min-width: 769px) {\n  .r-align-center.col-md-12 {\n    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(\"https://heubert.com/wp-content/uploads/2021/03/help_desk_support_banner.png\") no-repeat;\n                  background-size: cover;\n    border-radius: 12px;\n    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);\n    padding: 20px;\n    height:300px;\n    border: 1px solid transparent;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n    display:none;\n  }\n  \n}\n\n\n\n\n.newsmain .r-body {\n    background: white;\n    padding-top: 0px;\n    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\n     border-radius: 16px;\n}\n\n.newsmain .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar {\n    border-radius: 0px;\n    --border-top: #cd2122 2px solid;\n    border-botton:none;\n   \n}\n\n.newsmain [data-itemid=\"category_menu\"] {\n    display: flex !important;\n    width: 100%;\n    ---background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 7%, rgba(0, 212, 255, 1) 100%);\n    background: transparent;\n-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\nfont-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span {\n    /*flex: auto;*/\n    text-align: center;\n    position: relative;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span.active,\n.newsmain [data-itemid=\"category_menu\"]>span:hover {\n    background: #f2f4f4;\n     \n}\n\n.newsmain [data-itemid=\"category_menu\"]>span>a {\n    padding: 12px 20px;\n    display: inline-block;\n    text-transform: uppercase;\n    color: #484a4a ;\n    font-weight: bold;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+1)>a {\n    border-bottom: 3px solid #cd2122;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+2)>a {\n    border-bottom: 3px solid #4db237;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+3)>a {\n    border-bottom: 3px solid #665fef;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+4)>a {\n    border-bottom: 3px solid #febe36;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span>.newssubcategory {\n    display: none;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory {\n    display: flex !important;\n    flex-wrap: wrap;\n    list-style-type: none;\n    background: #FFF;\n    -webkit-box-shadow: rgb(0 0 0 / 20%) 0 0 25px;\n    box-shadow: rgb(0 0 0 / 20%) 0 0 25px;\n    backface-visibility: visible!important;\n    -webkit-animation-name: fadeIn;\n    animation-name: fadeIn;\n    position: absolute;\n    width: 202px;\n    left: 0;\n    top: auto;\n    z-index: 1001;\n    border-bottom: 3px solid #cd2122;\n    padding: 0px;\n    margin-bottom: 0px;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory li {\n    flex: 100% 0 0;\n    text-align: left;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory li a {\n    padding: 10px 0px 10px 20px;\n    line-height: 18px;\n    border-bottom: 1px solid #f5f5f5;\n    border-bottom: 1px solid rgba( 0, 0, 0, .06);\n    color: #888;\n    width: 100%;\n    display: block;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.newsmain [data-itemid=\"logo\"] i,\n.newsmain [data-itemid=\"logo\"] span {\n    font-size: 15px;\n    font-weight: 500;\n    letter-spacing: -1px;\n    text-transform: uppercase;\n}\n\n.newsmain [data-itemid=\"logo\"] {\n    padding: 0px;\n    display: flex !important;\n    align-items: center;\n}\n\n.newsmain [data-itemid=\"logo\"] i {\n    margin-right: 10px;\n}\n\n.newsmain [data-itemid=\"logo\"] i:before {\n    margin-top: 3px;\n    display: block;\n}\n\n.newsmain [data-itemid=\"logo\"] i,\n.newsmain [data-itemid=\"logo\"] .r {\n    color: #020024;\n}\n\n.newsmain [data-itemid=\"logo\"] .b {\n    color: #147025;\n    margin-right: 5px;\n}\n\n.newsmain .r-body .r-content [data-location=\"grid\"] {\n    display: flex;\n    padding: 0px 15px;\n}\n\n.newsmain .r-record-body .panel-body {\n    padding: 0px !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td {\n    padding: 0px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:first-child * {\n    display: inline-block;\n    width: 100%;\n    overflow: hidden !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child,\n.newsmain .r-record-body .panel-body tbody tr:first-child td:first-child * {\n    height: 210px;\n    \n}\n\n.newsmain [data-location=\"grid\"] .r-record-body .panel {\n    margin: 0px;\n    border-radius: 0px;\n}\n\n.newsmain .r-record-body .panel-heading {\n    display: none;\n}\n\n.newsmain .r-record-body .panel-body {\n    padding: 0px;\n}\n\n.list_image {\n    background-size: cover;\n    background-position: center center;\n    position: relative;\n    -webkit-transition: 1s;\n    -moz-transition: 1s;\n    transition: 1s;\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    transform: scale(1);\n    -webkit-transform-origin: 50% 100% 0;\n    -moz-transform-origin: 50% 100% 0;\n    transform-origin: 50% 100% 0;\n}\n\n.r-record-body:hover .list_image {\n    -webkit-transform: scale(1.035);\n    -moz-transform: scale(1.035);\n    transform: scale(1.035);\n}\n\n.list_image::before {\n    bottom: 0;\n    content: \"\";\n    display: block;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    z-index: 1;\n    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));\n    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);\n    -webkit-transition: background-color .2s ease;\n    -moz-transition: background-color 0.2s ease;\n    -o-transition: background-color 0.2s ease;\n    transition: background-color 0.2s ease;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child {\n    display: block;\n    position: relative;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td {\n    width: 100%;\n    position: absolute;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) {\n    color: white;\n    display: flex;\n    flex-wrap: wrap;\n    padding: 10px;\n    text-shadow: #000 10px 0 10px;\n    bottom: 0px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) a {\n    color: white;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Category\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Posted\"] {\n    font-size: 12px !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Posted\"] {\n    margin-left: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Category\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"] {\n    font-weight: normal !important;\n}\n\n.newsmain [data-field=\"Subcategory\"] span:not(:empty)::before {\n    content: \"\\2022\";\n    display: inline-block;\n    margin-right: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"] {\n    margin-left: 10px;\n    margin-right: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Title\"] {\n    font-weight: bold;\n    font-size: 16px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Title\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"SmallDescription\"] {\n    flex: 100% 0 0;\n}\n\n---.newsmain .r-body {\n    -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);\n    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);\n}\n\n.newsmain.list .r-body {\n    min-height: calc(100vh - 52px);\n}\n\n.newsmain.view .r-edit-form>tbody>tr {\n    display: flex;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child {\n    flex: auto;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix {\n    display: flex;\n    flex-direction: column;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field,\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix>span {\n    padding: 0px;\n    margin: 0px;\n    width: auto;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field[data-field=\"Title\"] {\n    padding: 15px 0px;\n    border-bottom: 1px #E8E8E8 solid;\n    border-top: 1px #E8E8E8 solid;\n    color: #1f1f1f;\n    font-size: 32px;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field[data-field=\"Title\"] span {\n    font-size: 32px !important;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-itemid=\"snippet\"] {\n    padding: 10px 0px;\n    border-top: 1px #E8E8E8 solid;\n    border-bottom: 1px #E8E8E8 solid;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-itemid=\"snippet\"] .btn {\n    background: #ad88fc;\n    border: none;\n    border-radius: 0;\n    font-weight: bold;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] {\n    padding-top: 25px;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n    text-align: justify;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"news_image\"] {\n    padding-top: 20px;\n}\n\n.newsmain.view [data-itemid=\"view_back_list\"] {\n    margin-left: 15px;\n}\n\n.newsmain.view [data-cellid=\"top_c\"] {\n    margin-left: 10px;\n}\n\n.newsmain.view [data-field=\"Category\"],\n.newsmain.view [data-field=\"Subcategory\"] {\n    margin-right: 10px !important;\n}\n\n.newsmain.view [data-itemid=\"logo\"] {\n    margin-left: 15px;\n}\n\n.newsmain.list [data-field=\"SmallDescription\"] a[data-gridlink] {\n    color: transparent !important;\n}\n\n.newsmain.list [data-field=\"SmallDescription\"] a[data-gridlink]:before {\n    content: \" ...\";\n    color: white;\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1200px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        \n        width: 100% !important;\n        border:none;\n    }\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1400px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        width: 100% !important;\n        border:none;\n    }\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1800px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        border:none;\n        width: 1300px !important;\n    }\n}\n\n.newsmain [data-location=\"grid\"] .r-record-body [data-field=\"Title\"] a {\n    font-size: 14px;\n}\n\n.r-images {\n    position: relative;\n}\n\n@media (min-width: 768px) {\n    .r-fluid:not(.mainfluid) {\n        margin-bottom: 20px;\n    }\n    \n    .newsmain [data-itemid=\"loginform_login\"] {\n        margin-left: auto;\n    }\n    .newsmain.list:not(.less5) [data-location=\"grid\"] {\n        display: none;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(4),\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(5) {\n        margin-top: -215px;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(4) {\n        margin-left: 50%;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(5) {\n        margin-left: auto;\n    }\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child .panel-body tbody tr:first-child,\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child .panel-body tbody tr:first-child td:first-child * {\n        height: 425px;\n    }\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child [data-field=\"Title\"] a {\n        font-size: 16px;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:first-child {\n        height: 430px;\n        flex: 50% 0 0;\n    }\n    .newsmain [data-location=\"grid\"] .r-record-body {\n        height: 215px;\n        flex: 25% 0 0;\n        margin-bottom: 0px;\n        padding: 2px;\n        cursor: pointer;\n    }\n    .newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n        padding-right: 50px;\n    }\n    .newsmain.view [data-field=\"Subcategory\"]:before {\n        content: \"•\";\n        margin-right: 10px !important;\n        display: inline-block;\n    }\n    [data-itemid=\"mobile_toogle\"] {\n        display: none;\n    }\n    .newsmain [data-itemid=\"logo\"] {\n        margin: 30px 0 20px 0;\n    }\n}\n\n.newsmain:not(.LoggedIn) [data-itemid=\"menu\"],\n.newsmain:not(.LoggedIn) [data-itemid=\"username_button\"],\n.newsmain.LoggedIn [data-itemid=\"loginform_login\"] {\n    display: none !important;\n}\n\n@media (max-width: 768px) {\n    .r-body {\n        box-shadow: none !important;\n        ;\n    }\n    .newsmain [data-location=\"grid\"] {\n        flex-direction: column;\n    }\n    .newsmain .r-grid-vertical>.r-record-body {\n        margin-bottom: 10px;\n    }\n    .newsmain [data-itemid=\"category_menu\"] {\n        flex-wrap: wrap;\n    }\n    .newsmain [data-itemid=\"category_menu\"]>span {\n        flex: 50% 0 0;\n    }\n    .newsmain [data-itemid=\"category_menu\"]>span a {\n        width: 100%;\n    }\n    .newsmain [data-cellid=\"above-grid_c2\"] {\n        padding: 0px;\n    }\n    .newsmain .breadcrumb li {\n        display: inline;\n    }\n    .newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n        word-break: break-all;\n    }\n    .newsmain [data-itemid=\"mobile_toogle\"] .collapsed {\n        /* #cd2122*/\n        border: 1px solid #cd2122;\n    }\n    .newsmain [data-itemid=\"mobile_toogle\"] .collapsed .icon-bar {\n        background: #cd2122;\n    }\n    .newsmain.mobile_toogle [data-itemid=\"mobile_toogle\"] .collapsed {\n        background: #cd2122;\n    }\n    .newsmain.mobile_toogle [data-itemid=\"mobile_toogle\"] .collapsed .icon-bar {\n        background: white;\n    }\n    .newsmain [data-location=\"supertop\"]>span {\n        margin: 0px;\n        box-shadow: none;\n    }\n    .newsmain [data-cellid=\"above-grid_c1\"] {\n        align-items: center;\n        display: flex;\n    }\n    .newsmain [data-cellid=\"above-grid_c1\"] [data-itemid=\"mobile_toogle\"] {\n        margin-left: auto;\n    }\n    .newsmain.mobile_toogle [data-cellid=\"above-grid_c1\"] {\n        position: absolute;\n        top: 0px;\n        z-index: 100;\n        width: 100%;\n        background: white;\n    }\n    .newsmain.mobile_toogle .navbar-form[data-itemid=\"simple_search\"] {\n        margin-top: 50px;\n    }\n    .newsmain .r-form[data-location=\"above-grid\"] .row {\n        margin-bottom: 0px;\n    }\n}\nnav#form_supertop_1 {\n    box-shadow: none}"
+			}
+		},
+		{
+			"table": 1341438908,
+			"page": "view",
+			"style": {
+				"condensedGrid": true,
+				"direction": "ltr",
+				"fixedSidebar": false,
+				"fixedTopbar": true,
+				"gcEvenBg": "",
+				"gcEvenColor": "",
+				"gcOddBg": "",
+				"gcOddColor": "",
+				"gcRolloverHighlightBg": "",
+				"gcRolloverHighlightColor": "",
+				"gpBorderColor": "",
+				"gpFooterBg": "",
+				"gpHeaderBg": "",
+				"gpHeaderColor": "",
+				"gpInnerBorder": "",
+				"gpInnerBorderColor": "",
+				"gpPanelBorder": "1px",
+				"logoCustomThemeColor": "",
+				"logoTheme": "white",
+				"menuStyle": "rounded",
+				"panelLikeGrid": false,
+				"rolloverHighlight": true,
+				"sidebarColor": "dark",
+				"sidebarCompact": false,
+				"sidebarCustomThemeColor": "",
+				"sidebarTheme": "primary",
+				"sidebarWidth": "250px",
+				"size": "normal",
+				"stripedGrid": false,
+				"theme": "macbaru",
+				"topbarCustomThemeColor": "#333333",
+				"topbarGradient": false,
+				"topbarLegacy": false,
+				"topbarTheme": "light",
+				"verticalBorders": false,
+				"customCss": "@media (min-width: 767px) {\n    .navbar-nav {\n        padding-left: 180px !important;\n    }\n}\n\n\n\n.newsmain .r-body {\n    background: white;\n    padding-top: 0px;\n}\n\n.newsmain .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar {\n    border-radius: 0px;\n    --border-top: #cd2122 2px solid;\n    border-botton:none;\n    --background: #2c2c2c;\n}\n\n.newsmain [data-itemid=\"category_menu\"] {\n    display: flex !important;\n    width: 100%;\n    ---background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 7%, rgba(0, 212, 255, 1) 100%);\n    background-image: linear-gradient(#2990ff, #007bff 60%, #0071eb);\n    color: white;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span {\n    /*flex: auto;*/\n    text-align: center;\n    position: relative;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span.active,\n.newsmain [data-itemid=\"category_menu\"]>span:hover {\n    background: #000000;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span>a {\n    padding: 12px 20px;\n    display: inline-block;\n    text-transform: uppercase;\n    color: white;\n    font-weight: bold;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+1)>a {\n    border-bottom: 3px solid #cd2122;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+2)>a {\n    border-bottom: 3px solid #4db237;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+3)>a {\n    border-bottom: 3px solid #665fef;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+4)>a {\n    border-bottom: 3px solid #febe36;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span>.newssubcategory {\n    display: none;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory {\n    display: flex !important;\n    flex-wrap: wrap;\n    list-style-type: none;\n    background: #FFF;\n    -webkit-box-shadow: rgb(0 0 0 / 20%) 0 0 25px;\n    box-shadow: rgb(0 0 0 / 20%) 0 0 25px;\n    backface-visibility: visible!important;\n    -webkit-animation-name: fadeIn;\n    animation-name: fadeIn;\n    position: absolute;\n    width: 202px;\n    left: 0;\n    top: auto;\n    z-index: 1001;\n    border-bottom: 3px solid #cd2122;\n    padding: 0px;\n    margin-bottom: 0px;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory li {\n    flex: 100% 0 0;\n    text-align: left;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory li a {\n    padding: 10px 0px 10px 20px;\n    line-height: 18px;\n    border-bottom: 1px solid #f5f5f5;\n    border-bottom: 1px solid rgba( 0, 0, 0, .06);\n    color: #888;\n    width: 100%;\n    display: block;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.newsmain [data-itemid=\"logo\"] i,\n.newsmain [data-itemid=\"logo\"] span {\n    font-size: 15px;\n    font-weight: 500;\n    letter-spacing: -1px;\n    text-transform: uppercase;\n}\n\n.newsmain [data-itemid=\"logo\"] {\n    padding: 0px;\n    display: flex !important;\n    align-items: center;\n}\n\n.newsmain [data-itemid=\"logo\"] i {\n    margin-right: 10px;\n}\n\n.newsmain [data-itemid=\"logo\"] i:before {\n    margin-top: 3px;\n    display: block;\n}\n\n.newsmain [data-itemid=\"logo\"] i,\n.newsmain [data-itemid=\"logo\"] .r {\n    color: #020024;\n}\n\n.newsmain [data-itemid=\"logo\"] .b {\n    color: #147025;\n    margin-right: 5px;\n}\n\n.newsmain .r-body .r-content [data-location=\"grid\"] {\n    display: flex;\n    padding: 0px 15px;\n}\n\n.newsmain .r-record-body .panel-body {\n    padding: 0px !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td {\n    padding: 0px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:first-child * {\n    display: inline-block;\n    width: 100%;\n    overflow: hidden !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child,\n.newsmain .r-record-body .panel-body tbody tr:first-child td:first-child * {\n    height: 210px;\n}\n\n.newsmain [data-location=\"grid\"] .r-record-body .panel {\n    margin: 0px;\n    border-radius: 0px;\n}\n\n.newsmain .r-record-body .panel-heading {\n    display: none;\n}\n\n.newsmain .r-record-body .panel-body {\n    padding: 0px;\n}\n\n.list_image {\n    background-size: cover;\n    background-position: center center;\n    position: relative;\n    -webkit-transition: 1s;\n    -moz-transition: 1s;\n    transition: 1s;\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    transform: scale(1);\n    -webkit-transform-origin: 50% 100% 0;\n    -moz-transform-origin: 50% 100% 0;\n    transform-origin: 50% 100% 0;\n}\n\n.r-record-body:hover .list_image {\n    -webkit-transform: scale(1.035);\n    -moz-transform: scale(1.035);\n    transform: scale(1.035);\n}\n\n.list_image::before {\n    bottom: 0;\n    content: \"\";\n    display: block;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    z-index: 1;\n    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));\n    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);\n    -webkit-transition: background-color .2s ease;\n    -moz-transition: background-color 0.2s ease;\n    -o-transition: background-color 0.2s ease;\n    transition: background-color 0.2s ease;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child {\n    display: block;\n    position: relative;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td {\n    width: 100%;\n    position: absolute;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) {\n    color: white;\n    display: flex;\n    flex-wrap: wrap;\n    padding: 10px;\n    text-shadow: #000 10px 0 10px;\n    bottom: 0px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) a {\n    color: white;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Category\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Posted\"] {\n    font-size: 12px !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Posted\"] {\n    margin-left: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Category\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"] {\n    font-weight: normal !important;\n}\n\n.newsmain [data-field=\"Subcategory\"] span:not(:empty)::before {\n    content: \"\\2022\";\n    display: inline-block;\n    margin-right: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"] {\n    margin-left: 10px;\n    margin-right: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Title\"] {\n    font-weight: bold;\n    font-size: 16px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Title\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"SmallDescription\"] {\n    flex: 100% 0 0;\n}\n\n-----.newsmain .r-body {\n    -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);\n    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);\n}\n\n.newsmain.list .r-body {\n    min-height: calc(100vh - 52px);\n}\n\n.newsmain.view .r-edit-form>tbody>tr {\n    display: flex;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child {\n    flex: auto;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix {\n    display: flex;\n    flex-direction: column;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field,\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix>span {\n    padding: 0px;\n    margin: 0px;\n    width: auto;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field[data-field=\"Title\"] {\n    padding: 15px 0px;\n    border-bottom: 1px #E8E8E8 solid;\n    border-top: 1px #E8E8E8 solid;\n    color: #1f1f1f;\n    font-size: 32px;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field[data-field=\"Title\"] span {\n    font-size: 32px !important;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-itemid=\"snippet\"] {\n    padding: 10px 0px;\n    border-top: 1px #E8E8E8 solid;\n    border-bottom: 1px #E8E8E8 solid;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-itemid=\"snippet\"] .btn {\n    background: #ad88fc;\n    border: none;\n    border-radius: 0;\n    font-weight: bold;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] {\n    padding-top: 25px;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n    text-align: justify;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"news_image\"] {\n    padding-top: 20px;\n}\n\n.newsmain.view [data-itemid=\"view_back_list\"] {\n    margin-left: 15px;\n}\n\n.newsmain.view [data-cellid=\"top_c\"] {\n    margin-left: 10px;\n}\n\n.newsmain.view [data-field=\"Category\"],\n.newsmain.view [data-field=\"Subcategory\"] {\n    margin-right: 10px !important;\n}\n\n.newsmain.view [data-itemid=\"logo\"] {\n    margin-left: 15px;\n}\n\n.newsmain.list [data-field=\"SmallDescription\"] a[data-gridlink] {\n    color: transparent !important;\n}\n\n.newsmain.list [data-field=\"SmallDescription\"] a[data-gridlink]:before {\n    content: \" ...\";\n    color: white;\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1200px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        width: 100% !important;\n        border:none;\n    }\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1400px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        width: 100% !important;\n        border:none;\n    }\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1800px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        border:none;\n        width: 1300px !important;\n    }\n}\n\n.newsmain [data-location=\"grid\"] .r-record-body [data-field=\"Title\"] a {\n    font-size: 14px;\n}\n\n.r-images {\n    position: relative;\n}\n\n@media (min-width: 768px) {\n    .r-fluid:not(.mainfluid) {\n        margin-bottom: 20px;\n    }\n    \n    .newsmain [data-itemid=\"loginform_login\"] {\n        margin-left: auto;\n    }\n    .newsmain.list:not(.less5) [data-location=\"grid\"] {\n        display: none;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(4),\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(5) {\n        margin-top: -215px;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(4) {\n        margin-left: 50%;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(5) {\n        margin-left: auto;\n    }\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child .panel-body tbody tr:first-child,\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child .panel-body tbody tr:first-child td:first-child * {\n        height: 425px;\n    }\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child [data-field=\"Title\"] a {\n        font-size: 16px;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:first-child {\n        height: 430px;\n        flex: 50% 0 0;\n    }\n    .newsmain [data-location=\"grid\"] .r-record-body {\n        height: 215px;\n        flex: 25% 0 0;\n        margin-bottom: 0px;\n        padding: 2px;\n        cursor: pointer;\n    }\n    .newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n        padding-right: 50px;\n    }\n    .newsmain.view [data-field=\"Subcategory\"]:before {\n        content: \"•\";\n        margin-right: 10px !important;\n        display: inline-block;\n    }\n    [data-itemid=\"mobile_toogle\"] {\n        display: none;\n    }\n    .newsmain [data-itemid=\"logo\"] {\n        margin: 30px 0 20px 0;\n    }\n}\n\n.newsmain:not(.LoggedIn) [data-itemid=\"menu\"],\n.newsmain:not(.LoggedIn) [data-itemid=\"username_button\"],\n.newsmain.LoggedIn [data-itemid=\"loginform_login\"] {\n    display: none !important;\n}\n\n@media (max-width: 768px) {\n    .r-body {\n        box-shadow: none !important;\n        ;\n    }\n    .newsmain [data-location=\"grid\"] {\n        flex-direction: column;\n    }\n    .newsmain .r-grid-vertical>.r-record-body {\n        margin-bottom: 10px;\n    }\n    .newsmain [data-itemid=\"category_menu\"] {\n        flex-wrap: wrap;\n    }\n    .newsmain [data-itemid=\"category_menu\"]>span {\n        flex: 50% 0 0;\n    }\n    .newsmain [data-itemid=\"category_menu\"]>span a {\n        width: 100%;\n    }\n    .newsmain [data-cellid=\"above-grid_c2\"] {\n        padding: 0px;\n    }\n    .newsmain .breadcrumb li {\n        display: inline;\n    }\n    .newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n        word-break: break-all;\n    }\n    .newsmain [data-itemid=\"mobile_toogle\"] .collapsed {\n        /* #cd2122*/\n        border: 1px solid #cd2122;\n    }\n    .newsmain [data-itemid=\"mobile_toogle\"] .collapsed .icon-bar {\n        background: #cd2122;\n    }\n    .newsmain.mobile_toogle [data-itemid=\"mobile_toogle\"] .collapsed {\n        background: #cd2122;\n    }\n    .newsmain.mobile_toogle [data-itemid=\"mobile_toogle\"] .collapsed .icon-bar {\n        background: white;\n    }\n    .newsmain [data-location=\"supertop\"]>span {\n        margin: 0px;\n        box-shadow: none;\n    }\n    .newsmain [data-cellid=\"above-grid_c1\"] {\n        align-items: center;\n        display: flex;\n    }\n    .newsmain [data-cellid=\"above-grid_c1\"] [data-itemid=\"mobile_toogle\"] {\n        margin-left: auto;\n    }\n    .newsmain.mobile_toogle [data-cellid=\"above-grid_c1\"] {\n        position: absolute;\n        top: 0px;\n        z-index: 100;\n        width: 100%;\n        background: white;\n    }\n    .newsmain.mobile_toogle .navbar-form[data-itemid=\"simple_search\"] {\n        margin-top: 50px;\n    }\n    .newsmain .r-form[data-location=\"above-grid\"] .row {\n        margin-bottom: 0px;\n    }\n}\n\n\n\nnav#form_supertop_1 {\n    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;\n}"
+			}
+		},
+		{
+			"table": 3465064792,
+			"page": "view",
+			"style": {
+				"condensedGrid": true,
+				"direction": "ltr",
+				"fixedSidebar": true,
+				"fixedTopbar": true,
+				"gcEvenBg": "",
+				"gcEvenColor": "",
+				"gcOddBg": "",
+				"gcOddColor": "",
+				"gcRolloverHighlightBg": "",
+				"gcRolloverHighlightColor": "",
+				"gpBorderColor": "",
+				"gpFooterBg": "",
+				"gpHeaderBg": "",
+				"gpHeaderColor": "",
+				"gpInnerBorder": "",
+				"gpInnerBorderColor": "",
+				"gpPanelBorder": "1px",
+				"logoCustomThemeColor": "",
+				"logoTheme": "white",
+				"menuStyle": "rounded",
+				"panelLikeGrid": false,
+				"rolloverHighlight": true,
+				"sidebarColor": "light",
+				"sidebarCompact": false,
+				"sidebarCustomThemeColor": "",
+				"sidebarTheme": "primary",
+				"sidebarWidth": "250px",
+				"size": "normal",
+				"stripedGrid": false,
+				"theme": "readable",
+				"topbarCustomThemeColor": "#333333",
+				"topbarGradient": false,
+				"topbarLegacy": false,
+				"topbarTheme": "legacy",
+				"verticalBorders": false,
+				"customCss": "@media (min-width: 767px) {\n    .navbar-nav {\n        padding-left: 180px !important;\n    }\n}\n\n\n\n.newsmain .r-body {\n    background: white;\n    padding-top: 0px;\n}\n\n.newsmain .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar {\n    border-radius: 0px;\n    --border-top: #cd2122 2px solid;\n    border-botton:none;\n    --background: #2c2c2c;\n}\n\n.newsmain [data-itemid=\"category_menu\"] {\n    display: flex !important;\n    width: 100%;\n    ---background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 7%, rgba(0, 212, 255, 1) 100%);\n    background-image: linear-gradient(#2990ff, #007bff 60%, #0071eb);\n    color: white;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span {\n    /*flex: auto;*/\n    text-align: center;\n    position: relative;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span.active,\n.newsmain [data-itemid=\"category_menu\"]>span:hover {\n    background: #000000;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span>a {\n    padding: 12px 20px;\n    display: inline-block;\n    text-transform: uppercase;\n    color: white;\n    font-weight: bold;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+1)>a {\n    border-bottom: 3px solid #cd2122;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+2)>a {\n    border-bottom: 3px solid #4db237;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+3)>a {\n    border-bottom: 3px solid #665fef;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:nth-child(4n+4)>a {\n    border-bottom: 3px solid #febe36;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span>.newssubcategory {\n    display: none;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory {\n    display: flex !important;\n    flex-wrap: wrap;\n    list-style-type: none;\n    background: #FFF;\n    -webkit-box-shadow: rgb(0 0 0 / 20%) 0 0 25px;\n    box-shadow: rgb(0 0 0 / 20%) 0 0 25px;\n    backface-visibility: visible!important;\n    -webkit-animation-name: fadeIn;\n    animation-name: fadeIn;\n    position: absolute;\n    width: 202px;\n    left: 0;\n    top: auto;\n    z-index: 1001;\n    border-bottom: 3px solid #cd2122;\n    padding: 0px;\n    margin-bottom: 0px;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory li {\n    flex: 100% 0 0;\n    text-align: left;\n}\n\n.newsmain [data-itemid=\"category_menu\"]>span:hover>.newssubcategory li a {\n    padding: 10px 0px 10px 20px;\n    line-height: 18px;\n    border-bottom: 1px solid #f5f5f5;\n    border-bottom: 1px solid rgba( 0, 0, 0, .06);\n    color: #888;\n    width: 100%;\n    display: block;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.newsmain [data-itemid=\"logo\"] i,\n.newsmain [data-itemid=\"logo\"] span {\n    font-size: 15px;\n    font-weight: 500;\n    letter-spacing: -1px;\n    text-transform: uppercase;\n}\n\n.newsmain [data-itemid=\"logo\"] {\n    padding: 0px;\n    display: flex !important;\n    align-items: center;\n}\n\n.newsmain [data-itemid=\"logo\"] i {\n    margin-right: 10px;\n}\n\n.newsmain [data-itemid=\"logo\"] i:before {\n    margin-top: 3px;\n    display: block;\n}\n\n.newsmain [data-itemid=\"logo\"] i,\n.newsmain [data-itemid=\"logo\"] .r {\n    color: #020024;\n}\n\n.newsmain [data-itemid=\"logo\"] .b {\n    color: #147025;\n    margin-right: 5px;\n}\n\n.newsmain .r-body .r-content [data-location=\"grid\"] {\n    display: flex;\n    padding: 0px 15px;\n}\n\n.newsmain .r-record-body .panel-body {\n    padding: 0px !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td {\n    padding: 0px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:first-child * {\n    display: inline-block;\n    width: 100%;\n    overflow: hidden !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child,\n.newsmain .r-record-body .panel-body tbody tr:first-child td:first-child * {\n    height: 210px;\n}\n\n.newsmain [data-location=\"grid\"] .r-record-body .panel {\n    margin: 0px;\n    border-radius: 0px;\n}\n\n.newsmain .r-record-body .panel-heading {\n    display: none;\n}\n\n.newsmain .r-record-body .panel-body {\n    padding: 0px;\n}\n\n.list_image {\n    background-size: cover;\n    background-position: center center;\n    position: relative;\n    -webkit-transition: 1s;\n    -moz-transition: 1s;\n    transition: 1s;\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    transform: scale(1);\n    -webkit-transform-origin: 50% 100% 0;\n    -moz-transform-origin: 50% 100% 0;\n    transform-origin: 50% 100% 0;\n}\n\n.r-record-body:hover .list_image {\n    -webkit-transform: scale(1.035);\n    -moz-transform: scale(1.035);\n    transform: scale(1.035);\n}\n\n.list_image::before {\n    bottom: 0;\n    content: \"\";\n    display: block;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    z-index: 1;\n    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));\n    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);\n    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);\n    -webkit-transition: background-color .2s ease;\n    -moz-transition: background-color 0.2s ease;\n    -o-transition: background-color 0.2s ease;\n    transition: background-color 0.2s ease;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child {\n    display: block;\n    position: relative;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td {\n    width: 100%;\n    position: absolute;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) {\n    color: white;\n    display: flex;\n    flex-wrap: wrap;\n    padding: 10px;\n    text-shadow: #000 10px 0 10px;\n    bottom: 0px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) a {\n    color: white;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Category\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Posted\"] {\n    font-size: 12px !important;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Posted\"] {\n    margin-left: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Category\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"] {\n    font-weight: normal !important;\n}\n\n.newsmain [data-field=\"Subcategory\"] span:not(:empty)::before {\n    content: \"\\2022\";\n    display: inline-block;\n    margin-right: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Subcategory\"] {\n    margin-left: 10px;\n    margin-right: 10px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Title\"] {\n    font-weight: bold;\n    font-size: 16px;\n}\n\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"Title\"],\n.newsmain .r-record-body .panel-body tbody tr:first-child td:nth-child(2) [data-field=\"SmallDescription\"] {\n    flex: 100% 0 0;\n}\n\n-----.newsmain .r-body {\n    -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);\n    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);\n}\n\n.newsmain.list .r-body {\n    min-height: calc(100vh - 52px);\n}\n\n.newsmain.view .r-edit-form>tbody>tr {\n    display: flex;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child {\n    flex: auto;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix {\n    display: flex;\n    flex-direction: column;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field,\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix>span {\n    padding: 0px;\n    margin: 0px;\n    width: auto;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field[data-field=\"Title\"] {\n    padding: 15px 0px;\n    border-bottom: 1px #E8E8E8 solid;\n    border-top: 1px #E8E8E8 solid;\n    color: #1f1f1f;\n    font-size: 32px;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix .r-view-field[data-field=\"Title\"] span {\n    font-size: 32px !important;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-itemid=\"snippet\"] {\n    padding: 10px 0px;\n    border-top: 1px #E8E8E8 solid;\n    border-bottom: 1px #E8E8E8 solid;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-itemid=\"snippet\"] .btn {\n    background: #ad88fc;\n    border: none;\n    border-radius: 0;\n    font-weight: bold;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] {\n    padding-top: 25px;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n    text-align: justify;\n}\n\n.newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"news_image\"] {\n    padding-top: 20px;\n}\n\n.newsmain.view [data-itemid=\"view_back_list\"] {\n    margin-left: 15px;\n}\n\n.newsmain.view [data-cellid=\"top_c\"] {\n    margin-left: 10px;\n}\n\n.newsmain.view [data-field=\"Category\"],\n.newsmain.view [data-field=\"Subcategory\"] {\n    margin-right: 10px !important;\n}\n\n.newsmain.view [data-itemid=\"logo\"] {\n    margin-left: 15px;\n}\n\n.newsmain.list [data-field=\"SmallDescription\"] a[data-gridlink] {\n    color: transparent !important;\n}\n\n.newsmain.list [data-field=\"SmallDescription\"] a[data-gridlink]:before {\n    content: \" ...\";\n    color: white;\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1200px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        width: 100% !important;\n        border:none;\n    }\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1400px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        width: 100% !important;\n        border:none;\n    }\n}\n\n@media print,\n(min-width: 768px) and (min-width: 1800px) {\n    .r-topbar-page .r-topheader[data-menu-width=\"compact\"]>.navbar,\n    .newsmain.view .r-body {\n        border:none;\n        width: 1300px !important;\n    }\n}\n\n.newsmain [data-location=\"grid\"] .r-record-body [data-field=\"Title\"] a {\n    font-size: 14px;\n}\n\n.r-images {\n    position: relative;\n}\n\n@media (min-width: 768px) {\n    .r-fluid:not(.mainfluid) {\n        margin-bottom: 20px;\n    }\n    \n    .newsmain [data-itemid=\"loginform_login\"] {\n        margin-left: auto;\n    }\n    .newsmain.list:not(.less5) [data-location=\"grid\"] {\n        display: none;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(4),\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(5) {\n        margin-top: -215px;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(4) {\n        margin-left: 50%;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:nth-child(5) {\n        margin-left: auto;\n    }\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child .panel-body tbody tr:first-child,\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child .panel-body tbody tr:first-child td:first-child * {\n        height: 425px;\n    }\n    .newsmain:not(.less5) .mainfluid .r-record-body:first-child [data-field=\"Title\"] a {\n        font-size: 16px;\n    }\n    .newsmain:not(.less5) .mainfluid[data-location=\"grid\"] .r-record-body:first-child {\n        height: 430px;\n        flex: 50% 0 0;\n    }\n    .newsmain [data-location=\"grid\"] .r-record-body {\n        height: 215px;\n        flex: 25% 0 0;\n        margin-bottom: 0px;\n        padding: 2px;\n        cursor: pointer;\n    }\n    .newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n        padding-right: 50px;\n    }\n    .newsmain.view [data-field=\"Subcategory\"]:before {\n        content: \"•\";\n        margin-right: 10px !important;\n        display: inline-block;\n    }\n    [data-itemid=\"mobile_toogle\"] {\n        display: none;\n    }\n    .newsmain [data-itemid=\"logo\"] {\n        margin: 30px 0 20px 0;\n    }\n}\n\n.newsmain:not(.LoggedIn) [data-itemid=\"menu\"],\n.newsmain:not(.LoggedIn) [data-itemid=\"username_button\"],\n.newsmain.LoggedIn [data-itemid=\"loginform_login\"] {\n    display: none !important;\n}\n\n@media (max-width: 768px) {\n    .r-body {\n        box-shadow: none !important;\n        ;\n    }\n    .newsmain [data-location=\"grid\"] {\n        flex-direction: column;\n    }\n    .newsmain .r-grid-vertical>.r-record-body {\n        margin-bottom: 10px;\n    }\n    .newsmain [data-itemid=\"category_menu\"] {\n        flex-wrap: wrap;\n    }\n    .newsmain [data-itemid=\"category_menu\"]>span {\n        flex: 50% 0 0;\n    }\n    .newsmain [data-itemid=\"category_menu\"]>span a {\n        width: 100%;\n    }\n    .newsmain [data-cellid=\"above-grid_c2\"] {\n        padding: 0px;\n    }\n    .newsmain .breadcrumb li {\n        display: inline;\n    }\n    .newsmain.view .r-edit-form>tbody>tr td:first-child .clearfix [data-field=\"FullDescription\"] .r-html-container p {\n        word-break: break-all;\n    }\n    .newsmain [data-itemid=\"mobile_toogle\"] .collapsed {\n        /* #cd2122*/\n        border: 1px solid #cd2122;\n    }\n    .newsmain [data-itemid=\"mobile_toogle\"] .collapsed .icon-bar {\n        background: #cd2122;\n    }\n    .newsmain.mobile_toogle [data-itemid=\"mobile_toogle\"] .collapsed {\n        background: #cd2122;\n    }\n    .newsmain.mobile_toogle [data-itemid=\"mobile_toogle\"] .collapsed .icon-bar {\n        background: white;\n    }\n    .newsmain [data-location=\"supertop\"]>span {\n        margin: 0px;\n        box-shadow: none;\n    }\n    .newsmain [data-cellid=\"above-grid_c1\"] {\n        align-items: center;\n        display: flex;\n    }\n    .newsmain [data-cellid=\"above-grid_c1\"] [data-itemid=\"mobile_toogle\"] {\n        margin-left: auto;\n    }\n    .newsmain.mobile_toogle [data-cellid=\"above-grid_c1\"] {\n        position: absolute;\n        top: 0px;\n        z-index: 100;\n        width: 100%;\n        background: white;\n    }\n    .newsmain.mobile_toogle .navbar-form[data-itemid=\"simple_search\"] {\n        margin-top: 50px;\n    }\n    .newsmain .r-form[data-location=\"above-grid\"] .row {\n        margin-bottom: 0px;\n    }\n}\n\n\n\nnav#form_supertop_1 {\n    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;\n}"
+			}
+		}
+	],
+	"settingsTable": {
+		"connId": "",
+		"table": ""
+	},
+	"messages": {},
+	"projectLogo": {
+		"Indonesian": "<img src=\"https://appmadrasah.kemenag.go.id/__statics/img/logo.png\" style=\"height:30px;\">\n<span><span class='b'>Penmad</span><span class='r'>@Kankemenag_Pidie</span></span>"
+	},
+	"cookieBannerText": {
+		"Indonesian": ""
+	}
+}

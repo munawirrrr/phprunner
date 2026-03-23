@@ -1,0 +1,4 @@
+{
+	"name": "alihke_dashboard",
+	"serverCode": "echo \"<script>\n    setTimeout(function(){\n        window.location.href = 'newsmain_list.php';\n    }, 1000); // 2000 ms = 1 detik\n</script>\";"
+}

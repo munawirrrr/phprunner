@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "madrasah_belum_proses",
+	"beforeJsCode": "window.popup = Runner.displayPopup({\n                                   url: Runner.pages.getUrl(\"lap_siswa_baru\",\"list\"),\n                                   width: 700,\n                                   height: 700,\n                                   header: 'madrasah'\n                                });"
+}
