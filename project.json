@@ -492,8 +492,7 @@
 						"name": "arent_host",
 						"code": "$host=\"localhost\";\n$user=\"penmadpi\";\n$pwd=\"##munazara1979\";\n$port=\"\";\n$sys_dbname=\"penmadpi_home\";"
 					}
-				],
-				"selectedCustomConn": "home"
+				]
 			}
 		}
 	],
